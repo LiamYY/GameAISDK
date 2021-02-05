@@ -19,3 +19,6 @@ src/ImgProc/Projects/Windows/UIRecognize/packages
 !tools/SDKTool/*
 !tools/AIClient/*
 !tools/AIClient_ubuntu16/*
+src/API/.DS_Store
+src/.DS_Store
+.DS_Store
