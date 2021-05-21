@@ -18,6 +18,10 @@ import platform
 import signal
 
 import time
+from collections import OrderedDict
+
+from labelme.shape import Shape
+
 from SDKTool import *
 
 from libs.Module.MapGraphPath import *
@@ -303,7 +307,7 @@ class SDKMainWindow(QMainWindow):
                     number = int(button.get("clickNum"))
                     uiGraph.AddNodeButton(curImage, (x, y, w, h), nextUI, number)
                     # if (nextUI is not '') and (labelName not in ['return']):
-                    if nextUI is not '':
+                    if nextUI != '':
                         # uiGraph.AddEdge(value.get("image"), nextUI)
                         uiGraph.AddEdge(curImage, nextUI)
 

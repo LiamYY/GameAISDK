@@ -97,7 +97,7 @@ class ADBClient(object):
         devices = self.devices()
         if not serial:
             if devices:
-                if len(devices) is 1:
+                if len(devices) == 1:
                     serial = list(devices.keys())[0]
                 else:
                     raise EnvironmentError("Multiple devices attached but default android serial not set.")

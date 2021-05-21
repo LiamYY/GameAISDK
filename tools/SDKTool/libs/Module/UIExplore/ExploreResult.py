@@ -81,7 +81,7 @@ class ExploreResult(object):
                     number = int(button.get("clickNum"))
                     uiGraph.AddNodeButton(curImage, (x, y, w, h), nextUI, number)
                     # if (nextUI is not '') and (labelName not in ['return']):
-                    if nextUI is not '':
+                    if nextUI != '':
                         # uiGraph.AddEdge(value.get("image"), nextUI)
                         uiGraph.AddEdge(curImage, nextUI)
 
